@@ -11,7 +11,7 @@ public class Shooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("File1")) Shot();
+        if (Input.GetButtonDown("Fire1")) Shot();
     }
 
     public void Shot(){
