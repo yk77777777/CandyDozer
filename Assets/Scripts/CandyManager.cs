@@ -7,7 +7,7 @@ public class CandyManager : MonoBehaviour
     const int DefaultCandyAmount = 30;
     public int candy = DefaultCandyAmount;
 
-    public void DonsumeCandy()
+    public void ConsumeCandy()
     {
         if (candy > 0) candy--;
     }
@@ -23,13 +23,11 @@ public class CandyManager : MonoBehaviour
     }
 
     void OnGUI() {
-        {
             GUI.color = Color.black;
 
             //キャンディのストック数を表示
             string label = "Candy : " + candy;
 
             GUI.Label(new Rect(50, 50, 100, 30), label);
-        }
     }
 }
